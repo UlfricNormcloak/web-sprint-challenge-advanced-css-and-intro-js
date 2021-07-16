@@ -23,10 +23,27 @@ Commit your code regularly and meaningfully.
 Please answer the following questions below, you may edit the readme file to include your answers below the question.
 
 1. How would you describe acessibility on the web to someone new to programming?
+
+Answer: Accessibility on the web really builds from the idea that the web needs to be made acessible to all people, regardless of device(s), or physical limitations or diability. All people should have the opportunity and means to engage the internet. For a Web Developer this means building sites with this idea at the front of one's mind, and should inform the way in which one carries out any project. 
+
 2. Talk about 3 different things you can do to ensure your website is accessible. 
+
+Answer: Three things you can do make sure your site is accessible:
+    1. Use semantic HTML when coding so that screen readers can read your page, which is important, for example is someone has a vision disability.
+    2. Be sure to build your sites using Responsive Design Principles; media queries and viewport meta tag in the HTML.
+    3. Also consider things that contribute to readibility; use Serif font, think about how you setup color contrasts, avoid smalll font sizes. 
+
 3. How would you explain the concept of a variable to someone new to programming?
+
+Answer: A basic building block for Javascript, variables are used to declare/store values, of various data types (numbers, strings, booleans), in the code that are referenced in certain fucntional elements of the webpage.
+
 4. What is the purpose of using functions in code?
+
+Answer: Functions are used to carry out a certain 'action' if you will, that produces a certain result based on the information that is provided to the function. The function could be thought of as a pre-configured box that provides an output once information is provided that meet the parameters of the function. It might be used for example, to produce a certain response or result based on a user's input or interaction with an element on the web page.
+
 5. How do you access a key inside of an object inside of an array?
+
+You can use either dot notation or bracket notation to accomplish this. In the case of dot notation, it might be something like console.log(array[i].name); -this references the name of the array, at the specified index (indicated here as i), and would then reference the key in the key:value pair, which here in the example is listed as ".name". In the case of bracket notation, the principle is the same, but the syntax varies. Taking this same example, it would look like array[index][key];
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
