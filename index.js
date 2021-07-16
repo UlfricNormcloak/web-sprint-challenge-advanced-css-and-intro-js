@@ -219,8 +219,7 @@ console.log(artists[2].bio);
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
-/*artists.splice(8, 1, "Vincent van Gogh");
-console.log(artists);*/
+console.log(artists[9].name = 'Vincent Van Gogh');
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
 Use getArtistByIndex to do the following:
@@ -245,11 +244,17 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
-function get20s(/*your code here*/) {
-  /*Your Code Here*/
+function get20s(array) {
+  const arrayYears = [];
+  for(let i =0; i < array.length; i++){
+    if(array[i].years > 1899 || array[i].years < 2000){
+      arrayYears.push(array[i]);
+    }
+    return arrayYears;
+  }
 }
 
-
+console.log(get20s(artists));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use removeArtist to do the following:
@@ -299,14 +304,16 @@ Use lotsOfArt to do the following:
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ... "Albrecht Dürer"]*/
 
 function lotsOfArt(array) {
-  /*const newArray = [];
+  const paintingsArray = [];
   for(let i = 0; i < array.length; i++){
-    
+   if(array[i].paintings >= 100){
+    paintingsArray.push(array[i]);
+   }  
   }
-  return newArray*/
+  return paintingsArray;
 }
 
-/*console.log(lotsOfArt(artists));*/
+console.log(lotsOfArt(artists));
 
 
 /* ***** END OF TASKS ***** */
